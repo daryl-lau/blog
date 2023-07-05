@@ -1,0 +1,35 @@
+.back-top {
+  color: @primary;
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+  opacity: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: darken(@primary, 5%);
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-exit-done {
+  display: none;
+}
+
+.fade-exit,
+.fade-enter-done {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}

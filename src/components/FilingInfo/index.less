@@ -1,0 +1,37 @@
+.filing-info {
+  text-align: center;
+  padding: 50px 0;
+  color: #999;
+  .site {
+    font-size: 26px;
+    color: @black-light;
+    margin-bottom: 10px;
+  }
+  .filing-number,
+  .advice {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .filing-number {
+    a {
+      color: #999;
+      padding-left: 10px;
+      &:hover {
+        color: @primary;
+      }
+      &:active {
+        color: #999;
+      }
+    }
+  }
+  .links {
+    color: #000;
+    margin-top: 10px;
+    .icon {
+      padding: 0 5px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

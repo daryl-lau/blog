@@ -1,0 +1,48 @@
+.category-wrap {
+  margin-top: 20px;
+  font-size: 14px;
+  .category-title {
+    color: @black-light;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fafafa;
+    padding: 0 20px;
+    font-family: @font-family-base;
+    font-size: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: calc(100% - 40px);
+      height: 0;
+      border-bottom: 1px solid #ebebeb;
+      position: absolute;
+    }
+  }
+  .category-menu {
+    margin: 0 0 20px;
+    padding: 10px 0 20px;
+    background-color: #fafafa;
+    background-image: url("../../assets/images/flower.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    max-height: 600px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+    .menu-item,
+    .menu-submenu {
+      user-select: none;
+    }
+    .menu-item-active,
+    .menu-submenu-active {
+      background-color: transparent;
+      color: @primary;
+    }
+    .menu-item-selected {
+      background-color: transparent;
+    }
+  }
+}

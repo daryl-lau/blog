@@ -1,0 +1,47 @@
+body {
+  font-family: @font-family-base;
+  color: @font-color;
+  font-size: @font-size;
+  min-width: @min-width;
+  background: @body-background;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+// input 和 textarea placeholder 字体颜色修改
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+@font-face {
+  font-family: "SourceHanSansCN";
+  src: url("../fonts/SourceHanSansCNMedium.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuhui";
+  font-display: block;
+  src: url("../fonts/Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf");
+}

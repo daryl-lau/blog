@@ -1,0 +1,30 @@
+.article-list {
+  width: 100%;
+  .article-list-title {
+    height: 20px;
+    line-height: 60px;
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    font-family: @font-family-base;
+  }
+  .article-card-readmore {
+    text-align: center;
+    span {
+      display: inline-block;
+      padding: 15px 50px;
+      border: 1px solid rgb(235, 235, 235);
+      color: @primary;
+      background-color: #ffffff;
+      transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      letter-spacing: 2px;
+      &:hover {
+        cursor: pointer;
+        color: #ffffff;
+        background-color: @primary;
+      }
+    }
+  }
+}
